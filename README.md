@@ -19,6 +19,3 @@ npm run start
 
 **Build Date**: {7/28/2025}  
 **Note**: Uses Next.js standard build (SSR/API capable)
-
-
-# 10_minute_school
