@@ -60,3 +60,5 @@ export interface ApiResponse {
     payload: any[];
     status_code: number;
 }
+
+export type LangType = "en" | "bn";

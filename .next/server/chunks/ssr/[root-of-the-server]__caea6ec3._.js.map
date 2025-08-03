@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 26, "column": 0}, "map": {"version":3,"sources":["file:///F:/MY%20CLASS/ALL%20OF%20MY%20PROJECTS/10_min_school_assesment/app/%28root%29/page.tsx"],"sourcesContent":["\nconst Home = async () => {\n  const fetchProductData\n \n  \n  return (\n    <div>page</div>\n  )\n}\n\nexport default Home\n"],"names":[],"mappings":";;;;;AACA,MAAM,OAAO;IACX,MAAM;IAGN,qBACE,8OAAC;kBAAI;;;;;;AAET;uCAEe","debugId":null}}]
+}

@@ -1,21 +1,22 @@
-// utils/api.ts
-import { ApiResponse } from "@/types/product";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import api from "@/lib/api";
+import {  ProductData } from "@/types/types";
 
-export const fetchProductData = async (
-    lang: string = "en"
-): Promise<ApiResponse> => {
-    const url = `https://api.10minuteschool.com/discovery-service/api/v1/products/ielts-course?lang=${lang}`;
+export const fetchProducts = async (
+  params?: Record<string, any>
+): Promise<ProductData> => {
+  // Check if running in browser environment before accessing localStorage
+  let lang = "en";
+  if (typeof window !== "undefined") {
+    lang = localStorage.getItem("lang") || "en";
+  }
 
-    const response = await fetch(url, {
-        headers: {
-            "X-TENMS-SOURCE-PLATFORM": "web",
-            Accept: "application/json",
-        },
-    });
-
-    if (!response.ok) {
-        throw new Error(`API request failed with status ${response.status}`);
-    }
-
-    return response.json();
+  const response = await api.get("/products/ielts-course", {
+    headers: {
+      "X-TENMS-SOURCE-PLATFORM": "web",
+      Accept: "application/json",
+    },
+    params: { ...params, lang },
+  });
+  return response.data?.data;
 };

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":["file:///F:/MY%20CLASS/ALL%20OF%20MY%20PROJECTS/10_min_school_assesment/app/loading.tsx"],"sourcesContent":["import React from \"react\";\r\n\r\nconst Loader = () => {\r\n  return (\r\n    <div className=\"w-full h-screen flex justify-center items-center\">\r\n      loading........\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default Loader;\r\n"],"names":[],"mappings":";;;;;AAEA,MAAM,SAAS;IACb,qBACE,8OAAC;QAAI,WAAU;kBAAmD;;;;;;AAItE;uCAEe","debugId":null}}]
+}

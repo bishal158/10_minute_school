@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///F:/MY%20CLASS/ALL%20OF%20MY%20PROJECTS/10_min_school_assesment/providers/providers.tsx"],"sourcesContent":["\"use client\";\r\nimport React from \"react\";\r\nimport LangProvider from \"./lang-provider\";\r\nimport { QueryClient, QueryClientProvider } from '@tanstack/react-query'\r\nimport { ReactQueryDevtools } from '@tanstack/react-query-devtools'\r\nexport const Providers = ({ children }: { children: React.ReactNode }) => {\r\n    return (\r\n          <QueryClientProvider client={queryClient}>\r\n            <ReactQueryDevtools initialIsOpen={false} />\r\n            {children}\r\n          </QueryClientProvider>\r\n        \r\n    );\r\n};"],"names":[],"mappings":";;;;AAGA;AACA;AAJA;;;;AAKO,MAAM,YAAY;QAAC,EAAE,QAAQ,EAAiC;IACjE,qBACM,6LAAC,yLAAA,CAAA,sBAAmB;QAAC,QAAQ;;0BAC3B,6LAAC,uLAAA,CAAA,qBAAkB;gBAAC,eAAe;;;;;;YAClC;;;;;;;AAIb;KARa","debugId":null}}]
+}
